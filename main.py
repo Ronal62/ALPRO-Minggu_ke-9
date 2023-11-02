@@ -1,6 +1,10 @@
 # Kelompok 2
-print("Are you hungry ?")
-print("MyPizza")
+print("We Open Here")
+print("=========MyPizza========")
+
+enterName = input("Tulis Namamu disini : ")
+table = input("Masukkan nomor meja yang ingin kamu tempati : ")
+
 
 menuPizza = {
     1: "Frank Furter",
@@ -36,6 +40,8 @@ while True:
         if pilihCrust in menuCrust:
             crust_diPilih = menuCrust[pilihCrust]
             print(f"Crust yang kamu pilih {crust_diPilih}")
+
+
             ukuran = input("Pilih ukuran yang kamu inginkan:\n Personal, Regular, Large : \n")
             if ukuran == "Personal":
                 total_harga += 43637
@@ -58,7 +64,7 @@ while True:
                     total_harga += 0
                 else:
                     print("Maaf, Kamu tidak memilih apapun")
-                    
+
             elif ukuran == "Large":
                 total_harga += 132738
                 keju = input("Ingin menambahkan Keju Extra ?:\n(ya atau tidak) :")
@@ -70,7 +76,7 @@ while True:
                     print("Maaf, Kamu tidak memilih apapun")
 
             else:
-                print("MAaf, Kamu tidak memilih apapun")
+                print("Sorry, You dont choose anything")
         else:
             print("Maaf, Crust yang kamu pilih tidak ada")
     else:
@@ -81,7 +87,7 @@ while True:
         break
 
 print("\n")
-print(f"Terima kasih telah memesan {pizza_diPilih}")
+print(f"Terima kasih {enterName} telah memesan pizza {pizza_diPilih}")
+print(f"Nomor meja mu adalah {table}")
 print(f"Total harga pesanan Anda adalah: Rp{total_harga}")
 print("Silakan selesaikan pembayaran. Selamat menikmati makanan Anda!")
-
