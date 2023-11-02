@@ -58,4 +58,30 @@ while True:
                     total_harga += 0
                 else:
                     print("Maaf, Kamu tidak memilih apapun")
+                    
+            elif ukuran == "Large":
+                total_harga += 132738
+                keju = input("Ingin menambahkan Keju Extra ?:\n(ya atau tidak) :")
+                if keju == "ya":
+                    total_harga += 13636
+                elif keju == "tidak":
+                    total_harga += 0
+                else:
+                    print("Maaf, Kamu tidak memilih apapun")
+
+            else:
+                print("MAaf, Kamu tidak memilih apapun")
+        else:
+            print("Maaf, Crust yang kamu pilih tidak ada")
+    else:
+        print("Menu yang Anda pilih tidak ada, mohon pilih nomor sesuai ketentuan menu.")
+
+    pesan_lagi = input("Apakah Anda ingin memesan pizza lagi? (ya/tidak): ")
+    if pesan_lagi.lower() != "ya":
+        break
+
+print("\n")
+print(f"Terima kasih telah memesan {pizza_diPilih}")
+print(f"Total harga pesanan Anda adalah: Rp{total_harga}")
+print("Silakan selesaikan pembayaran. Selamat menikmati makanan Anda!")
 
