@@ -36,3 +36,26 @@ while True:
         if pilihCrust in menuCrust:
             crust_diPilih = menuCrust[pilihCrust]
             print(f"Crust yang kamu pilih {crust_diPilih}")
+            ukuran = input("Pilih ukuran yang kamu inginkan:\n Personal, Regular, Large : \n")
+            if ukuran == "Personal":
+                total_harga += 43637
+
+                keju = input("Ingin menambahkan Keju Extra ?:\n(ya atau tidak) :")
+                if keju == "ya":
+                    total_harga += 13636
+                elif keju == "tidak":
+                    total_harga += 0
+                else:
+                    print("Maaf, Kamu tidak memilih apapun")
+
+            elif ukuran == "Regular":
+                total_harga += 100910
+
+                keju = input("Ingin menambahkan Keju Extra ?:\n(ya atau tidak) :")
+                if keju == "ya":
+                    total_harga += 13636
+                elif keju == "tidak":
+                    total_harga += 0
+                else:
+                    print("Maaf, Kamu tidak memilih apapun")
+
